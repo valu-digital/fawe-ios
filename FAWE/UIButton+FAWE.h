@@ -1,5 +1,5 @@
 //
-//  FAWEAppDelegate.h
+//  UIButton+FAWE.h
 //  FAWE
 //
 //  Created by Juha Suni on 15.3.2013.
@@ -31,9 +31,21 @@
 //  ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 
 #import <UIKit/UIKit.h>
+#import "NSString+FontAwesome.h"
+#import "FAWEIconView.h"
+#import "FAWEButtonSpecs.h"
 
-@interface FAWEAppDelegate : UIResponder <UIApplicationDelegate>
+@interface UIButton(FAWE)
 
-@property (strong, nonatomic) UIWindow *window;
+@property (nonatomic, strong) FAWEButtonSpecs *specs;
+
+- (FAWEIconView *)iconView;
+- (void)setIcon:(FAWEIcon)icon;
+- (void)setIconColor:(UIColor *)iconColor;
+- (void)setIconEdgeInsets:(UIEdgeInsets)iconEdgeInsets;
+- (UIEdgeInsets)iconEdgeInsets;
+- (void)setIconSize:(NSInteger)iconSize;
+- (void)setIconAlign:(FAWEButtonIconAlign)iconAlign;
+- (FAWEButtonIconAlign)iconAlign;
 
 @end

@@ -7,20 +7,28 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		9D302C1716F9FB1D00B3931A /* FAWEButtonSpecs.m in Sources */ = {isa = PBXBuildFile; fileRef = 9D302C1616F9FB1D00B3931A /* FAWEButtonSpecs.m */; };
 		9D5E7A1416F84CE800690E2E /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9D5E7A1316F84CE800690E2E /* UIKit.framework */; };
 		9D5E7A1616F84CE800690E2E /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9D5E7A1516F84CE800690E2E /* Foundation.framework */; };
 		9D5E7A1816F84CE800690E2E /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9D5E7A1716F84CE800690E2E /* CoreGraphics.framework */; };
 		9D5E7A1E16F84CE800690E2E /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 9D5E7A1C16F84CE800690E2E /* InfoPlist.strings */; };
 		9D5E7A2016F84CE800690E2E /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 9D5E7A1F16F84CE800690E2E /* main.m */; };
 		9D5E7A2416F84CE800690E2E /* FAWEAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 9D5E7A2316F84CE800690E2E /* FAWEAppDelegate.m */; };
-		9D5E7A2616F84CE800690E2E /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = 9D5E7A2516F84CE800690E2E /* Default.png */; };
-		9D5E7A2816F84CE800690E2E /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 9D5E7A2716F84CE800690E2E /* Default@2x.png */; };
-		9D5E7A2A16F84CE800690E2E /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 9D5E7A2916F84CE800690E2E /* Default-568h@2x.png */; };
 		9D5E7A3216F84CE800690E2E /* SenTestingKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9D5E7A3116F84CE800690E2E /* SenTestingKit.framework */; };
 		9D5E7A3316F84CE800690E2E /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9D5E7A1316F84CE800690E2E /* UIKit.framework */; };
 		9D5E7A3416F84CE800690E2E /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9D5E7A1516F84CE800690E2E /* Foundation.framework */; };
 		9D5E7A3C16F84CE800690E2E /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 9D5E7A3A16F84CE800690E2E /* InfoPlist.strings */; };
 		9D5E7A3F16F84CE800690E2E /* FAWETests.m in Sources */ = {isa = PBXBuildFile; fileRef = 9D5E7A3E16F84CE800690E2E /* FAWETests.m */; };
+		9D5E7A4916F84DD600690E2E /* FontAwesome.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 9D5E7A4816F84DD600690E2E /* FontAwesome.ttf */; };
+		9D5E7A4A16F84DD600690E2E /* FontAwesome.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 9D5E7A4816F84DD600690E2E /* FontAwesome.ttf */; };
+		9D5E7A5316F84DF600690E2E /* NSString+FontAwesome.m in Sources */ = {isa = PBXBuildFile; fileRef = 9D5E7A4C16F84DF600690E2E /* NSString+FontAwesome.m */; };
+		9D5E7A5416F84DF600690E2E /* NSString+FontAwesome.m in Sources */ = {isa = PBXBuildFile; fileRef = 9D5E7A4C16F84DF600690E2E /* NSString+FontAwesome.m */; };
+		9D5E7A5516F84DF600690E2E /* UIFont+FontAwesome.m in Sources */ = {isa = PBXBuildFile; fileRef = 9D5E7A4E16F84DF600690E2E /* UIFont+FontAwesome.m */; };
+		9D5E7A5616F84DF600690E2E /* UIFont+FontAwesome.m in Sources */ = {isa = PBXBuildFile; fileRef = 9D5E7A4E16F84DF600690E2E /* UIFont+FontAwesome.m */; };
+		9D5E7A5716F84DF600690E2E /* UIButton+FAWE.m in Sources */ = {isa = PBXBuildFile; fileRef = 9D5E7A5016F84DF600690E2E /* UIButton+FAWE.m */; };
+		9D5E7A5816F84DF600690E2E /* UIButton+FAWE.m in Sources */ = {isa = PBXBuildFile; fileRef = 9D5E7A5016F84DF600690E2E /* UIButton+FAWE.m */; };
+		9D5E7A5916F84DF600690E2E /* FAWEIconView.m in Sources */ = {isa = PBXBuildFile; fileRef = 9D5E7A5216F84DF600690E2E /* FAWEIconView.m */; };
+		9D5E7A5A16F84DF600690E2E /* FAWEIconView.m in Sources */ = {isa = PBXBuildFile; fileRef = 9D5E7A5216F84DF600690E2E /* FAWEIconView.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -34,6 +42,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		9D302C1516F9FB1D00B3931A /* FAWEButtonSpecs.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FAWEButtonSpecs.h; sourceTree = "<group>"; };
+		9D302C1616F9FB1D00B3931A /* FAWEButtonSpecs.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FAWEButtonSpecs.m; sourceTree = "<group>"; };
 		9D5E7A1016F84CE800690E2E /* FAWE.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FAWE.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9D5E7A1316F84CE800690E2E /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		9D5E7A1516F84CE800690E2E /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -44,15 +54,21 @@
 		9D5E7A2116F84CE800690E2E /* FAWE-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "FAWE-Prefix.pch"; sourceTree = "<group>"; };
 		9D5E7A2216F84CE800690E2E /* FAWEAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FAWEAppDelegate.h; sourceTree = "<group>"; };
 		9D5E7A2316F84CE800690E2E /* FAWEAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FAWEAppDelegate.m; sourceTree = "<group>"; };
-		9D5E7A2516F84CE800690E2E /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
-		9D5E7A2716F84CE800690E2E /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
-		9D5E7A2916F84CE800690E2E /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
 		9D5E7A3016F84CE800690E2E /* FAWETests.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FAWETests.octest; sourceTree = BUILT_PRODUCTS_DIR; };
 		9D5E7A3116F84CE800690E2E /* SenTestingKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SenTestingKit.framework; path = Library/Frameworks/SenTestingKit.framework; sourceTree = DEVELOPER_DIR; };
 		9D5E7A3916F84CE800690E2E /* FAWETests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "FAWETests-Info.plist"; sourceTree = "<group>"; };
 		9D5E7A3B16F84CE800690E2E /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		9D5E7A3D16F84CE800690E2E /* FAWETests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FAWETests.h; sourceTree = "<group>"; };
 		9D5E7A3E16F84CE800690E2E /* FAWETests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FAWETests.m; sourceTree = "<group>"; };
+		9D5E7A4816F84DD600690E2E /* FontAwesome.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = FontAwesome.ttf; sourceTree = "<group>"; };
+		9D5E7A4B16F84DF600690E2E /* NSString+FontAwesome.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+FontAwesome.h"; sourceTree = "<group>"; };
+		9D5E7A4C16F84DF600690E2E /* NSString+FontAwesome.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+FontAwesome.m"; sourceTree = "<group>"; };
+		9D5E7A4D16F84DF600690E2E /* UIFont+FontAwesome.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIFont+FontAwesome.h"; sourceTree = "<group>"; };
+		9D5E7A4E16F84DF600690E2E /* UIFont+FontAwesome.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIFont+FontAwesome.m"; sourceTree = "<group>"; };
+		9D5E7A4F16F84DF600690E2E /* UIButton+FAWE.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIButton+FAWE.h"; sourceTree = "<group>"; };
+		9D5E7A5016F84DF600690E2E /* UIButton+FAWE.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIButton+FAWE.m"; sourceTree = "<group>"; };
+		9D5E7A5116F84DF600690E2E /* FAWEIconView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FAWEIconView.h; sourceTree = "<group>"; };
+		9D5E7A5216F84DF600690E2E /* FAWEIconView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FAWEIconView.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -112,9 +128,19 @@
 		9D5E7A1916F84CE800690E2E /* FAWE */ = {
 			isa = PBXGroup;
 			children = (
+				9D5E7A4B16F84DF600690E2E /* NSString+FontAwesome.h */,
+				9D5E7A4C16F84DF600690E2E /* NSString+FontAwesome.m */,
+				9D5E7A4D16F84DF600690E2E /* UIFont+FontAwesome.h */,
+				9D5E7A4E16F84DF600690E2E /* UIFont+FontAwesome.m */,
+				9D5E7A4F16F84DF600690E2E /* UIButton+FAWE.h */,
+				9D5E7A5016F84DF600690E2E /* UIButton+FAWE.m */,
+				9D5E7A5116F84DF600690E2E /* FAWEIconView.h */,
+				9D5E7A5216F84DF600690E2E /* FAWEIconView.m */,
 				9D5E7A2216F84CE800690E2E /* FAWEAppDelegate.h */,
 				9D5E7A2316F84CE800690E2E /* FAWEAppDelegate.m */,
 				9D5E7A1A16F84CE800690E2E /* Supporting Files */,
+				9D302C1516F9FB1D00B3931A /* FAWEButtonSpecs.h */,
+				9D302C1616F9FB1D00B3931A /* FAWEButtonSpecs.m */,
 			);
 			path = FAWE;
 			sourceTree = "<group>";
@@ -122,13 +148,11 @@
 		9D5E7A1A16F84CE800690E2E /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				9D5E7A4816F84DD600690E2E /* FontAwesome.ttf */,
 				9D5E7A1B16F84CE800690E2E /* FAWE-Info.plist */,
 				9D5E7A1C16F84CE800690E2E /* InfoPlist.strings */,
 				9D5E7A1F16F84CE800690E2E /* main.m */,
 				9D5E7A2116F84CE800690E2E /* FAWE-Prefix.pch */,
-				9D5E7A2516F84CE800690E2E /* Default.png */,
-				9D5E7A2716F84CE800690E2E /* Default@2x.png */,
-				9D5E7A2916F84CE800690E2E /* Default-568h@2x.png */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -225,9 +249,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				9D5E7A1E16F84CE800690E2E /* InfoPlist.strings in Resources */,
-				9D5E7A2616F84CE800690E2E /* Default.png in Resources */,
-				9D5E7A2816F84CE800690E2E /* Default@2x.png in Resources */,
-				9D5E7A2A16F84CE800690E2E /* Default-568h@2x.png in Resources */,
+				9D5E7A4916F84DD600690E2E /* FontAwesome.ttf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -236,6 +258,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				9D5E7A3C16F84CE800690E2E /* InfoPlist.strings in Resources */,
+				9D5E7A4A16F84DD600690E2E /* FontAwesome.ttf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -264,6 +287,11 @@
 			files = (
 				9D5E7A2016F84CE800690E2E /* main.m in Sources */,
 				9D5E7A2416F84CE800690E2E /* FAWEAppDelegate.m in Sources */,
+				9D5E7A5316F84DF600690E2E /* NSString+FontAwesome.m in Sources */,
+				9D5E7A5516F84DF600690E2E /* UIFont+FontAwesome.m in Sources */,
+				9D5E7A5716F84DF600690E2E /* UIButton+FAWE.m in Sources */,
+				9D5E7A5916F84DF600690E2E /* FAWEIconView.m in Sources */,
+				9D302C1716F9FB1D00B3931A /* FAWEButtonSpecs.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -272,6 +300,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				9D5E7A3F16F84CE800690E2E /* FAWETests.m in Sources */,
+				9D5E7A5416F84DF600690E2E /* NSString+FontAwesome.m in Sources */,
+				9D5E7A5616F84DF600690E2E /* UIFont+FontAwesome.m in Sources */,
+				9D5E7A5816F84DF600690E2E /* UIButton+FAWE.m in Sources */,
+				9D5E7A5A16F84DF600690E2E /* FAWEIconView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -438,6 +470,7 @@
 				9D5E7A4416F84CE800690E2E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		9D5E7A4516F84CE800690E2E /* Build configuration list for PBXNativeTarget "FAWETests" */ = {
 			isa = XCConfigurationList;
@@ -446,6 +479,7 @@
 				9D5E7A4716F84CE800690E2E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

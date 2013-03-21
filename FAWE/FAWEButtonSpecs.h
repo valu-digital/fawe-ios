@@ -1,5 +1,5 @@
 //
-//  FAWEAppDelegate.h
+//  FAWEButtonSpecs.h
 //  FAWE
 //
 //  Created by Juha Suni on 15.3.2013.
@@ -30,10 +30,20 @@
 //  OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF
 //  ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 
-#import <UIKit/UIKit.h>
+#import <Foundation/Foundation.h>
+#import "NSString+FontAwesome.h"
+#import "FAWEIconView.h"
 
-@interface FAWEAppDelegate : UIResponder <UIApplicationDelegate>
+typedef NS_ENUM(NSInteger, FAWEButtonIconAlign) {
+    FAWEButtonIconAlignLeft     = 0,
+    FAWEButtonIconAlignRight,
+    FAWEButtonIconAlignCenter
+};
 
-@property (strong, nonatomic) UIWindow *window;
+@interface FAWEButtonSpecs : NSObject
+
+@property (nonatomic) UIEdgeInsets iconEdgeInsets;
+@property (nonatomic, strong) FAWEIconView *iconView;
+@property (nonatomic) FAWEButtonIconAlign iconAlign;
 
 @end

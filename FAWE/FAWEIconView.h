@@ -1,5 +1,5 @@
 //
-//  FAWEAppDelegate.h
+//  FAWEconView.h
 //  FAWE
 //
 //  Created by Juha Suni on 15.3.2013.
@@ -31,9 +31,24 @@
 //  ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 
 #import <UIKit/UIKit.h>
+#import "NSString+FontAwesome.h"
 
-@interface FAWEAppDelegate : UIResponder <UIApplicationDelegate>
+// A view for rendering Font Awesome icons. Other components
+// of FAWE library utilize this class but it can be as well
+// used as a standalone view component. It is recommended to
+// initialize the component using |initWithIcon|.
+@interface FAWEIconView : UILabel
 
-@property (strong, nonatomic) UIWindow *window;
+@property (nonatomic) CGGradientRef gradient;
+@property (nonatomic) NSInteger iconSize;
+@property (nonatomic) CGSize innerShadowOffset;
+@property (nonatomic) CGFloat innerShadowBlur;
+@property (nonatomic, strong) UIColor *innerShadowColor;
+
+- (id)initWithIcon:(FAWEIcon)icon withSize:(NSInteger)iconSize andOrigin:(CGPoint)origin;
+- (void)setIcon:(FAWEIcon)icon;
+- (FAWEIcon)icon;
+- (void)setIconColor:(UIColor *)iconColor;
+- (void)setGradientWithColors:(NSArray *)colors andLocations:(CGFloat[])locations;
 
 @end

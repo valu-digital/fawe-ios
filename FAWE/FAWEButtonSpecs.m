@@ -1,5 +1,5 @@
 //
-//  FAWEAppDelegate.h
+//  FAWEButtonSpecs.m
 //  FAWE
 //
 //  Created by Juha Suni on 15.3.2013.
@@ -30,10 +30,8 @@
 //  OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF
 //  ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 
-#import <UIKit/UIKit.h>
+#import "FAWEButtonSpecs.h"
 
-@interface FAWEAppDelegate : UIResponder <UIApplicationDelegate>
-
-@property (strong, nonatomic) UIWindow *window;
+@implementation FAWEButtonSpecs
 
 @end

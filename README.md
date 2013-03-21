@@ -23,6 +23,14 @@ Besides of simply rendering the icon with desired size and color, FAWEIconView a
 inner shadow and gradient color. These features make it easy to easily create stunning icons
 that scale perfectly.
 
+Example of creating FAWEIconView with gradient color:
+```objectivec
+FAWEIconView *gradientIcon = [[FAWEIconView alloc] initWithIcon:FAWEIconAmbulance withSize:20.0f andOrigin:CGPointZero];
+[gradientIcon setGradientWithColors:[NSArray arrayWithObjects:[UIColor whiteColor], [UIColor blackColor], nil] andLocations:nil];
+[view addSubview:gradientIcon];
+```
+        
+
 License
 -------------------
 

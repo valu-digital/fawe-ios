@@ -25,9 +25,15 @@ that scale perfectly.
 
 Example of creating FAWEIconView with gradient color:
 ```objectivec
-FAWEIconView *gradientIcon = [[FAWEIconView alloc] initWithIcon:FAWEIconAmbulance withSize:20.0f andOrigin:CGPointZero];
-[gradientIcon setGradientWithColors:[NSArray arrayWithObjects:[UIColor whiteColor], [UIColor blackColor], nil] andLocations:nil];
-[view addSubview:gradientIcon];
+FAWEIconView *gradientIcon = [[FAWEIconView alloc] initWithIcon:FAWEIconAmbulance
+                                                       withSize:20
+                                                      andOrigin:CGPointZero];
+
+[gradientIcon setGradientWithColors:[NSArray arrayWithObjects:
+                                     [UIColor whiteColor],
+                                     [UIColor blackColor],
+                                     nil]
+                       andLocations:nil];
 ```
         
 

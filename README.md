@@ -13,7 +13,7 @@ Currently FAWE contains:
 - extension to UIButton
 - FAWEIconView
 
-<img src="https://github.com/mediacabinet/fawe-ios/blob/master/FAWE/example.png?raw=true" width="500" height="329" style="border: 1px solid #7e8394" />
+<img src="https://github.com/mediacabinet/fawe-ios/blob/master/FAWE/example.png?raw=true" width="470" height="310" style="border: 1px solid #7e8394" />
 
 FAWEIconView
 -------------------

@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		9D302C1716F9FB1D00B3931A /* FAWEButtonSpecs.m in Sources */ = {isa = PBXBuildFile; fileRef = 9D302C1616F9FB1D00B3931A /* FAWEButtonSpecs.m */; };
+		9D302C1916FB132F00B3931A /* example.png in Resources */ = {isa = PBXBuildFile; fileRef = 9D302C1816FB132F00B3931A /* example.png */; };
 		9D5E7A1416F84CE800690E2E /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9D5E7A1316F84CE800690E2E /* UIKit.framework */; };
 		9D5E7A1616F84CE800690E2E /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9D5E7A1516F84CE800690E2E /* Foundation.framework */; };
 		9D5E7A1816F84CE800690E2E /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9D5E7A1716F84CE800690E2E /* CoreGraphics.framework */; };
@@ -44,6 +45,7 @@
 /* Begin PBXFileReference section */
 		9D302C1516F9FB1D00B3931A /* FAWEButtonSpecs.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FAWEButtonSpecs.h; sourceTree = "<group>"; };
 		9D302C1616F9FB1D00B3931A /* FAWEButtonSpecs.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FAWEButtonSpecs.m; sourceTree = "<group>"; };
+		9D302C1816FB132F00B3931A /* example.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = example.png; sourceTree = "<group>"; };
 		9D5E7A1016F84CE800690E2E /* FAWE.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FAWE.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9D5E7A1316F84CE800690E2E /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		9D5E7A1516F84CE800690E2E /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -148,6 +150,7 @@
 		9D5E7A1A16F84CE800690E2E /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				9D302C1816FB132F00B3931A /* example.png */,
 				9D5E7A4816F84DD600690E2E /* FontAwesome.ttf */,
 				9D5E7A1B16F84CE800690E2E /* FAWE-Info.plist */,
 				9D5E7A1C16F84CE800690E2E /* InfoPlist.strings */,
@@ -250,6 +253,7 @@
 			files = (
 				9D5E7A1E16F84CE800690E2E /* InfoPlist.strings in Resources */,
 				9D5E7A4916F84DD600690E2E /* FontAwesome.ttf in Resources */,
+				9D302C1916FB132F00B3931A /* example.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -46,50 +46,50 @@
     self.window.rootViewController = viewController;
     
     UIView *view = viewController.view;
+    view.backgroundColor = [UIColor blackColor];
     
     FAWEIconView *simpleIcon;
     FAWEIconView *gradientIcon;
     FAWEIconView *innerShadowIcon;
     FAWEIconView *gradientShadowIcon;
     NSInteger y = 0;
-    NSInteger sizes[4] = {100, 50, 25, 12};
+    
+    NSInteger sizes[4] = {96, 48, 24, 12};
     
     for (int row=0; row < 4; row++) {
-        simpleIcon = [[FAWEIconView alloc] initWithIcon:FAWEIconAmbulance withSize:sizes[row] andOrigin:CGPointMake(0, y)];
-        [view addSubview:simpleIcon];
-        
-        gradientIcon = [[FAWEIconView alloc] initWithIcon:FAWEIconAmbulance withSize:sizes[row] andOrigin:CGPointMake(120, y)];
+        simpleIcon = [[FAWEIconView alloc] initWithIcon:FAWEIconAmbulance withSize:sizes[row] andOrigin:CGPointMake(10, 10)];
+
+        gradientIcon = [[FAWEIconView alloc] initWithIcon:FAWEIconAmbulance withSize:sizes[row] andOrigin:CGPointMake(sizes[row]+30, 10)];
         [gradientIcon setGradientWithColors:[NSArray arrayWithObjects:[UIColor whiteColor], [UIColor blackColor], nil] andLocations:nil];
-        [view addSubview:gradientIcon];
-        
-        innerShadowIcon = [[FAWEIconView alloc] initWithIcon:FAWEIconAmbulance withSize:sizes[row] andOrigin:CGPointMake(240, y)];
+
+        innerShadowIcon = [[FAWEIconView alloc] initWithIcon:FAWEIconAmbulance withSize:sizes[row] andOrigin:CGPointMake((sizes[row]+20)*2+10, 10)];
         innerShadowIcon.textColor = [UIColor whiteColor];
-        innerShadowIcon.innerShadowBlur = 4.0f;
+        innerShadowIcon.innerShadowBlur = 3-row;
         innerShadowIcon.innerShadowColor = [UIColor blackColor];
-        innerShadowIcon.innerShadowOffset = CGSizeMake(2, 2);
-        [view addSubview:innerShadowIcon];
-        
-        gradientShadowIcon = [[FAWEIconView alloc] initWithIcon:FAWEIconAmbulance withSize:sizes[row] andOrigin:CGPointMake(360, y)];
+        innerShadowIcon.innerShadowOffset = CGSizeMake(0, 0);
+
+        gradientShadowIcon = [[FAWEIconView alloc] initWithIcon:FAWEIconAmbulance withSize:sizes[row] andOrigin:CGPointMake((sizes[row]+20)*3+10, 10)];
         [gradientShadowIcon setGradientWithColors:[NSArray arrayWithObjects:[UIColor whiteColor], [UIColor colorWithWhite:0.6 alpha:1.0], nil] andLocations:nil];
         gradientShadowIcon.innerShadowColor = [UIColor blackColor];
-        gradientShadowIcon.innerShadowBlur = 4.0f;
-        gradientShadowIcon.innerShadowOffset = CGSizeMake(2, 2);
-        [view addSubview:gradientShadowIcon];
+        gradientShadowIcon.innerShadowBlur = 3-row;
+        gradientShadowIcon.innerShadowOffset = CGSizeMake(0, 0);
         
-        y += sizes[row]+10;
+        [self createBarWithViews:[NSArray arrayWithObjects:simpleIcon, innerShadowIcon, gradientIcon, gradientShadowIcon, nil]
+                         toPoint:CGPointMake(0, y) withHeight:sizes[row]+20];
+        
+        y += sizes[row]+20;
     }
     
     UIButton *leftAligned = [UIButton buttonWithType:UIButtonTypeRoundedRect];
-    leftAligned.frame = CGRectMake(0, y, 100, 30);
+    leftAligned.frame = CGRectMake(10, 10, 100, 30);
     [leftAligned setIconColor:[UIColor blackColor]];
     [leftAligned setIconEdgeInsets:UIEdgeInsetsMake(0, 10, 0, -10)];
     [leftAligned setIcon:FAWEIconCaretLeft];
     [leftAligned setTitle:@"Left" forState:UIControlStateNormal];
     leftAligned.titleLabel.font = [UIFont systemFontOfSize:14];
-    [view addSubview:leftAligned];
     
     UIButton *centerAligned = [UIButton buttonWithType:UIButtonTypeRoundedRect];
-    centerAligned.frame = CGRectMake(120, y, 100, 30);
+    centerAligned.frame = CGRectMake(120, 10, 100, 30);
     [centerAligned setIconAlign:FAWEButtonIconAlignCenter];
     [centerAligned setIconColor:[UIColor blackColor]];
     [centerAligned setIcon:FAWEIconCaretDown];
@@ -97,20 +97,34 @@
     [centerAligned setIconEdgeInsets:UIEdgeInsetsMake(20, 0, 0, 0)];
     [centerAligned setTitle:@"Settings" forState:UIControlStateNormal];
     centerAligned.titleLabel.font = [UIFont systemFontOfSize:14];
-    [view addSubview:centerAligned];
     
     UIButton *rightAligned = [UIButton buttonWithType:UIButtonTypeRoundedRect];
-    rightAligned.frame = CGRectMake(240, y, 100, 30);
+    rightAligned.frame = CGRectMake(230, 10, 100, 30);
     [rightAligned setIconAlign:FAWEButtonIconAlignRight];
     [rightAligned setIconColor:[UIColor blackColor]];
     [rightAligned setIconEdgeInsets:UIEdgeInsetsMake(0, -10, 0, 10)];
     [rightAligned setIcon:FAWEIconCaretRight];
     [rightAligned setTitle:@"Next" forState:UIControlStateNormal];
     rightAligned.titleLabel.font = [UIFont systemFontOfSize:14];
-    [view addSubview:rightAligned];
+    
+    [self createBarWithViews:[NSArray arrayWithObjects:leftAligned, centerAligned, rightAligned, nil]
+                     toPoint:CGPointMake(0, y)
+                  withHeight:50];
+    
     
     [self.window makeKeyAndVisible];
     return YES;
+}
+
+- (void)createBarWithViews:(NSArray *)views toPoint:(CGPoint)point withHeight:(NSInteger)height
+{
+    UIView *view = self.window.rootViewController.view;
+    UINavigationBar *bar = [[UINavigationBar alloc] initWithFrame:CGRectMake(point.x, point.y, view.bounds.size.width, height)];
+    [view addSubview:bar];
+    
+    for (UIView *subView in views) {
+        [bar addSubview:subView];
+    }
 }
 
 - (void)applicationWillResignActive:(UIApplication *)application

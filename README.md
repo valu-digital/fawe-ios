@@ -13,6 +13,16 @@ Currently FAWE provides you
 - extension to UIButton
 - FAWEIconView
 
+FAWEIconView
+-------------------
+
+FAWEIconView is the basis of any iconic UI control. It can be used as a standalone component or, 
+thanks to UIButton+FAWE, as a part of standard UIButton. 
+
+Besides of simply rendering the icon with desired size and color, FAWEIconView also supports
+inner shadow and gradient color. These features make it easy to easily create stunning icons
+that scale perfectly.
+
 License
 -------------------
 

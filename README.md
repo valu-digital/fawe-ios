@@ -1,8 +1,5 @@
-fawe-ios
-========
-
 iOS Font Awesome Library
--------------
+========
 
 FAWE is a library (or XCode project actually) that provides new UI controls and extensions to 
 native UI controls that both leverage the excellent Font Awesome icon font.

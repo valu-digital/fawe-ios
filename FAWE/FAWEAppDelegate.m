@@ -73,7 +73,7 @@
         gradientShadowIcon.innerShadowColor = [UIColor blackColor];
         gradientShadowIcon.innerShadowBlur = 3-row;
         gradientShadowIcon.innerShadowOffset = CGSizeMake(0, 0);
-        
+
         [self createBarWithViews:[NSArray arrayWithObjects:simpleIcon, innerShadowIcon, gradientIcon, gradientShadowIcon, nil]
                          toPoint:CGPointMake(0, y) withHeight:sizes[row]+20];
         

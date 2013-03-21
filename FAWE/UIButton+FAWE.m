@@ -129,23 +129,10 @@ static char FAWE_BUTTON_SPECS_KEY;
     return self.specs.iconAlign;
 }
 
-- (void)updateTitleEdgeInsets
-{
-    CGRect icf = self.iconView.frame;
-    
-    if (self.iconAlign == FAWEButtonIconAlignRight) {
-        self.titleEdgeInsets = UIEdgeInsetsMake(self.titleEdgeInsets.top, self.titleEdgeInsets.left, self.titleEdgeInsets.bottom, self.titleEdgeInsets.right+(self.frame.size.width-icf.origin.x-self.iconEdgeInsets.right));
-    } else if(self.iconAlign == FAWEButtonIconAlignLeft) {
-        self.titleEdgeInsets = UIEdgeInsetsMake(self.titleEdgeInsets.top, self.titleEdgeInsets.left+((icf.origin.x+icf.size.width)/2), self.titleEdgeInsets.bottom, self.titleEdgeInsets.right);
-    }
-}
-
 - (void)updateIconFrame
 {
     CGRect icf = [self makeIconFrame];
     self.iconView.frame = icf;
-    
-    [self updateTitleEdgeInsets];
 }
 
 - (CGRect)makeIconFrame

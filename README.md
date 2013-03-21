@@ -11,8 +11,8 @@ Instead of creating an image for each icon in your application, you can now star
 Font Awesome icons, even with the default controls, such as UIButton.
 
 Currently FAWE provides you
-- extension to NSString (thanks to [Alex Usbergo](git://github.com/alexdrone/ios-fontawesome.git))
-- extension to UIFont (thanks to [Alex Usbergo](git://github.com/alexdrone/ios-fontawesome.git))
+- extension to NSString (thanks to [Alex Usbergo](https://github.com/alexdrone/ios-fontawesome) )
+- extension to UIFont (thanks to [Alex Usbergo](https://github.com/alexdrone/ios-fontawesome) )
 - extension to UIButton
 - FAWEIconView
 

@@ -17,13 +17,13 @@ FAWEIconView
 -------------------
 
 FAWEIconView is the basis of any iconic UI control. It can be used as a standalone component or, 
-thanks to UIButton+FAWE, as a part of standard UIButton. 
+thanks to UIButton+FAWE, with standard UIButton. 
 
 Besides of simply rendering the icon with desired size and color, FAWEIconView also supports
-inner shadow and gradient color. These features make it easy to easily create stunning icons
+inner shadow and gradient color. These features make it easy to create stunning icons
 that scale perfectly.
 
-Example of creating FAWEIconView with gradient color:
+Example of initializing FAWEIconView with icon size 20 and a linear gradient color from white to black:
 ```objectivec
 FAWEIconView *gradientIcon = [[FAWEIconView alloc] initWithIcon:FAWEIconAmbulance
                                                        withSize:20

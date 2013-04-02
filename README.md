@@ -24,9 +24,10 @@ Requirements:
 
 
 Step by step:
+
 1. Drag & drop the .h and .m classes to your project (you may omit the FAWEAppDelegate files)
 2. Drag & drop FontAwesome.ttf to your project
-3. Find your **<Project>-Info.plist** file and add property **Fonts provided by application** (unless it already exists)
+3. Find your **ProjectNameGoesHere-Info.plist** file and add property **Fonts provided by application** (unless it already exists)
 4. Add new item under **Fonts provided by application** and set its value to **FontAwesome.ttf**
 
 FAWEIconView
@@ -52,6 +53,10 @@ FAWEIconView *gradientIcon = [[FAWEIconView alloc] initWithIcon:FAWEIconAmbulanc
                        andLocations:nil];
 ```
         
+More examples
+-------------------
+
+For more examples, see **FAWEAppDelegate.m**. To see the icons in action, simply clone the repository and open the enclosed project in your XCode.
 
 License
 -------------------

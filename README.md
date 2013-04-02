@@ -15,6 +15,20 @@ Currently FAWE contains:
 
 <img src="https://github.com/mediacabinet/fawe-ios/blob/master/FAWE/example.png?raw=true" width="470" height="310" style="border: 1px solid #7e8394" />
 
+Using FAWE
+-------------------
+
+Requirements:
+- FAWE requires iOS 6.0 or greater (not tested on previous versions)
+- ARC (Automatic Reference Counting) must be enabled
+
+
+Step by step:
+1. Drag & drop the .h and .m classes to your project (you may omit the FAWEAppDelegate files)
+2. Drag & drop FontAwesome.ttf to your project
+3. Find your **<Project>-Info.plist** file and add property **Fonts provided by application** (unless it already exists)
+4. Add new item under **Fonts provided by application** and set its value to **FontAwesome.ttf**
+
 FAWEIconView
 -------------------
 

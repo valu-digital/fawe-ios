@@ -56,7 +56,7 @@ FAWEIconView *gradientIcon = [[FAWEIconView alloc] initWithIcon:FAWEIconAmbulanc
 More examples
 -------------------
 
-For more examples, see **FAWEAppDelegate.m**. To see the icons in action, simply clone the repository and open the enclosed project in your XCode.
+For more examples, see **FAWEAppDelegate.m**. To see the icons in action, simply clone the repository, open the project in your XCode and run in the device or simulator.
 
 License
 -------------------

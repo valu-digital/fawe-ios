@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		9D05B404172533B70033EFBC /* UIButton+FAWE.m in Sources */ = {isa = PBXBuildFile; fileRef = 9D5E7A5016F84DF600690E2E /* UIButton+FAWE.m */; };
+		9D05B40D172538600033EFBC /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 9D05B40C172538600033EFBC /* Default-568h@2x.png */; };
 		9D302C1716F9FB1D00B3931A /* FAWEButtonSpecs.m in Sources */ = {isa = PBXBuildFile; fileRef = 9D302C1616F9FB1D00B3931A /* FAWEButtonSpecs.m */; };
 		9D302C1916FB132F00B3931A /* example.png in Resources */ = {isa = PBXBuildFile; fileRef = 9D302C1816FB132F00B3931A /* example.png */; };
 		9D5E7A1416F84CE800690E2E /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9D5E7A1316F84CE800690E2E /* UIKit.framework */; };
@@ -26,7 +28,6 @@
 		9D5E7A5416F84DF600690E2E /* NSString+FontAwesome.m in Sources */ = {isa = PBXBuildFile; fileRef = 9D5E7A4C16F84DF600690E2E /* NSString+FontAwesome.m */; };
 		9D5E7A5516F84DF600690E2E /* UIFont+FontAwesome.m in Sources */ = {isa = PBXBuildFile; fileRef = 9D5E7A4E16F84DF600690E2E /* UIFont+FontAwesome.m */; };
 		9D5E7A5616F84DF600690E2E /* UIFont+FontAwesome.m in Sources */ = {isa = PBXBuildFile; fileRef = 9D5E7A4E16F84DF600690E2E /* UIFont+FontAwesome.m */; };
-		9D5E7A5716F84DF600690E2E /* UIButton+FAWE.m in Sources */ = {isa = PBXBuildFile; fileRef = 9D5E7A5016F84DF600690E2E /* UIButton+FAWE.m */; };
 		9D5E7A5816F84DF600690E2E /* UIButton+FAWE.m in Sources */ = {isa = PBXBuildFile; fileRef = 9D5E7A5016F84DF600690E2E /* UIButton+FAWE.m */; };
 		9D5E7A5916F84DF600690E2E /* FAWEIconView.m in Sources */ = {isa = PBXBuildFile; fileRef = 9D5E7A5216F84DF600690E2E /* FAWEIconView.m */; };
 		9D5E7A5A16F84DF600690E2E /* FAWEIconView.m in Sources */ = {isa = PBXBuildFile; fileRef = 9D5E7A5216F84DF600690E2E /* FAWEIconView.m */; };
@@ -43,6 +44,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		9D05B40C172538600033EFBC /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
 		9D302C1516F9FB1D00B3931A /* FAWEButtonSpecs.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FAWEButtonSpecs.h; sourceTree = "<group>"; };
 		9D302C1616F9FB1D00B3931A /* FAWEButtonSpecs.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FAWEButtonSpecs.m; sourceTree = "<group>"; };
 		9D302C1816FB132F00B3931A /* example.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = example.png; sourceTree = "<group>"; };
@@ -100,6 +102,7 @@
 		9D5E7A0716F84CE800690E2E = {
 			isa = PBXGroup;
 			children = (
+				9D05B40C172538600033EFBC /* Default-568h@2x.png */,
 				9D5E7A1916F84CE800690E2E /* FAWE */,
 				9D5E7A3716F84CE800690E2E /* FAWETests */,
 				9D5E7A1216F84CE800690E2E /* Frameworks */,
@@ -254,6 +257,7 @@
 				9D5E7A1E16F84CE800690E2E /* InfoPlist.strings in Resources */,
 				9D5E7A4916F84DD600690E2E /* FontAwesome.ttf in Resources */,
 				9D302C1916FB132F00B3931A /* example.png in Resources */,
+				9D05B40D172538600033EFBC /* Default-568h@2x.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -293,9 +297,9 @@
 				9D5E7A2416F84CE800690E2E /* FAWEAppDelegate.m in Sources */,
 				9D5E7A5316F84DF600690E2E /* NSString+FontAwesome.m in Sources */,
 				9D5E7A5516F84DF600690E2E /* UIFont+FontAwesome.m in Sources */,
-				9D5E7A5716F84DF600690E2E /* UIButton+FAWE.m in Sources */,
 				9D5E7A5916F84DF600690E2E /* FAWEIconView.m in Sources */,
 				9D302C1716F9FB1D00B3931A /* FAWEButtonSpecs.m in Sources */,
+				9D05B404172533B70033EFBC /* UIButton+FAWE.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -406,6 +410,7 @@
 				GCC_PREFIX_HEADER = "FAWE/FAWE-Prefix.pch";
 				INFOPLIST_FILE = "FAWE/FAWE-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PUBLIC_HEADERS_FOLDER_PATH = "include/$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -417,6 +422,7 @@
 				GCC_PREFIX_HEADER = "FAWE/FAWE-Prefix.pch";
 				INFOPLIST_FILE = "FAWE/FAWE-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PUBLIC_HEADERS_FOLDER_PATH = "include/$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;

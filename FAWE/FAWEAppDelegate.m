@@ -33,6 +33,7 @@
 #import "FAWEAppDelegate.h"
 #import "FAWEIconView.h"
 #import "UIButton+FAWE.h"
+#import "FAWETickButton.h"
 
 @implementation FAWEAppDelegate
 
@@ -46,7 +47,7 @@
     self.window.rootViewController = viewController;
     
     UIView *view = viewController.view;
-    view.backgroundColor = [UIColor blackColor];
+    view.backgroundColor = [UIColor whiteColor];
     
     FAWEIconView *simpleIcon;
     FAWEIconView *gradientIcon;
@@ -79,6 +80,17 @@
         
         y += sizes[row]+20;
     }
+
+    FAWETickButton *tickButton = [[FAWETickButton alloc] initWithFrame:CGRectMake(10, y+60, 50, 50)];
+    
+    [tickButton setIcon:FAWEIconOk forState:UIControlStateNormal];
+    [tickButton setIconColor:[UIColor whiteColor] forState:UIControlStateNormal];
+    [tickButton setIconColor:[UIColor redColor] forState:UIControlStateHighlighted];
+    [tickButton setCircleColor:[UIColor blackColor]];
+    
+    //tickButton.titleLabel.textAlignment = UITextAlignmentCenter;
+    [view addSubview:tickButton];
+    [view bringSubviewToFront:tickButton];
     
     UIButton *leftAligned = [UIButton buttonWithType:UIButtonTypeRoundedRect];
     leftAligned.frame = CGRectMake(10, 10, 100, 30);

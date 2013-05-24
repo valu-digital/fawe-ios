@@ -11,6 +11,8 @@
 		9D05B40D172538600033EFBC /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 9D05B40C172538600033EFBC /* Default-568h@2x.png */; };
 		9D302C1716F9FB1D00B3931A /* FAWEButtonSpecs.m in Sources */ = {isa = PBXBuildFile; fileRef = 9D302C1616F9FB1D00B3931A /* FAWEButtonSpecs.m */; };
 		9D302C1916FB132F00B3931A /* example.png in Resources */ = {isa = PBXBuildFile; fileRef = 9D302C1816FB132F00B3931A /* example.png */; };
+		9D5B67CA174F7853001C40A4 /* FAWETickButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 9D5B67C9174F7853001C40A4 /* FAWETickButton.m */; };
+		9D5B67CC174F78F3001C40A4 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9D5B67CB174F78F3001C40A4 /* QuartzCore.framework */; };
 		9D5E7A1416F84CE800690E2E /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9D5E7A1316F84CE800690E2E /* UIKit.framework */; };
 		9D5E7A1616F84CE800690E2E /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9D5E7A1516F84CE800690E2E /* Foundation.framework */; };
 		9D5E7A1816F84CE800690E2E /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9D5E7A1716F84CE800690E2E /* CoreGraphics.framework */; };
@@ -48,6 +50,9 @@
 		9D302C1516F9FB1D00B3931A /* FAWEButtonSpecs.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FAWEButtonSpecs.h; sourceTree = "<group>"; };
 		9D302C1616F9FB1D00B3931A /* FAWEButtonSpecs.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FAWEButtonSpecs.m; sourceTree = "<group>"; };
 		9D302C1816FB132F00B3931A /* example.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = example.png; sourceTree = "<group>"; };
+		9D5B67C8174F7853001C40A4 /* FAWETickButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FAWETickButton.h; sourceTree = "<group>"; };
+		9D5B67C9174F7853001C40A4 /* FAWETickButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FAWETickButton.m; sourceTree = "<group>"; };
+		9D5B67CB174F78F3001C40A4 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
 		9D5E7A1016F84CE800690E2E /* FAWE.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FAWE.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9D5E7A1316F84CE800690E2E /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		9D5E7A1516F84CE800690E2E /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -80,6 +85,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9D5B67CC174F78F3001C40A4 /* QuartzCore.framework in Frameworks */,
 				9D5E7A1416F84CE800690E2E /* UIKit.framework in Frameworks */,
 				9D5E7A1616F84CE800690E2E /* Foundation.framework in Frameworks */,
 				9D5E7A1816F84CE800690E2E /* CoreGraphics.framework in Frameworks */,
@@ -102,6 +108,7 @@
 		9D5E7A0716F84CE800690E2E = {
 			isa = PBXGroup;
 			children = (
+				9D5B67CB174F78F3001C40A4 /* QuartzCore.framework */,
 				9D05B40C172538600033EFBC /* Default-568h@2x.png */,
 				9D5E7A1916F84CE800690E2E /* FAWE */,
 				9D5E7A3716F84CE800690E2E /* FAWETests */,
@@ -146,6 +153,8 @@
 				9D5E7A1A16F84CE800690E2E /* Supporting Files */,
 				9D302C1516F9FB1D00B3931A /* FAWEButtonSpecs.h */,
 				9D302C1616F9FB1D00B3931A /* FAWEButtonSpecs.m */,
+				9D5B67C8174F7853001C40A4 /* FAWETickButton.h */,
+				9D5B67C9174F7853001C40A4 /* FAWETickButton.m */,
 			);
 			path = FAWE;
 			sourceTree = "<group>";
@@ -300,6 +309,7 @@
 				9D5E7A5916F84DF600690E2E /* FAWEIconView.m in Sources */,
 				9D302C1716F9FB1D00B3931A /* FAWEButtonSpecs.m in Sources */,
 				9D05B404172533B70033EFBC /* UIButton+FAWE.m in Sources */,
+				9D5B67CA174F7853001C40A4 /* FAWETickButton.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

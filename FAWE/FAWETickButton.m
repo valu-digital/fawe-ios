@@ -54,6 +54,7 @@
 
 - (void)drawRect:(CGRect)rect
 {
-   self.circleLayer.fillColor = self.circleColor.CGColor;
+//    [super drawRect:rect];
+    self.circleLayer.fillColor = self.circleColor.CGColor;
 }
 @end

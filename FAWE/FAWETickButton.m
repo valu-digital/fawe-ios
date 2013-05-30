@@ -17,11 +17,8 @@
     self = [super initWithFrame:frame];
     
     if (self) {
-        
         self.circleColor = [UIColor blackColor];
-        
         self.circleLayer = [CAShapeLayer layer];
-        self.circleLayer.zPosition = -1;
         
         float radius = self.frame.size.width / 2;
         self.circleLayer.path = [UIBezierPath bezierPathWithRoundedRect:CGRectMake(0, 0, 2.0*radius, 2.0*radius)
@@ -29,17 +26,13 @@
         self.circleLayer.position = CGPointMake(0, 0);
         
         [self.layer addSublayer:self.circleLayer];
+        
+        self.titleLabel.frame = self.bounds;
+        self.titleLabel.font = [UIFont fontWithName:kFontAwesomeFamilyName size:self.bounds.size.width/2];
+        
     }
     
     return self;
-}
-
-- (void)layoutSubviews
-{
-    self.titleLabel.frame = self.frame;
-    self.titleLabel.font = [UIFont fontWithName:kFontAwesomeFamilyName size:self.frame.size.width/2];
-    
-    [super layoutSubviews];
 }
 
 - (void)setIcon:(FAWEIcon)icon forState:(UIControlState)state
@@ -54,7 +47,7 @@
 
 - (void)drawRect:(CGRect)rect
 {
-//    [super drawRect:rect];
+    [super drawRect:rect];
     self.circleLayer.fillColor = self.circleColor.CGColor;
 }
 @end

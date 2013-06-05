@@ -40,12 +40,12 @@
 @interface FAWEIconView : UILabel
 
 @property (nonatomic) CGGradientRef gradient;
-@property (nonatomic) NSInteger iconSize;
+@property (nonatomic) CGFloat iconSize;
 @property (nonatomic) CGSize innerShadowOffset;
 @property (nonatomic) CGFloat innerShadowBlur;
 @property (nonatomic, strong) UIColor *innerShadowColor;
 
-- (id)initWithIcon:(FAWEIcon)icon withSize:(NSInteger)iconSize andOrigin:(CGPoint)origin;
+- (id)initWithIcon:(FAWEIcon)icon withSize:(CGFloat)iconSize andOrigin:(CGPoint)origin;
 - (void)setIcon:(FAWEIcon)icon;
 - (FAWEIcon)icon;
 - (void)setIconColor:(UIColor *)iconColor;

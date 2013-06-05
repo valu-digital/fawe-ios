@@ -56,7 +56,7 @@ typedef NS_ENUM(int, FAWEIconLayer) {
     return self;
 }
 
-- (id)initWithIcon:(FAWEIcon)icon withSize:(NSInteger)iconSize andOrigin:(CGPoint)origin
+- (id)initWithIcon:(FAWEIcon)icon withSize:(CGFloat)iconSize andOrigin:(CGPoint)origin
 {
     UIFont *font = [UIFont fontWithName:kFontAwesomeFamilyName size:iconSize];
     CGSize size = [[NSString fontAwesomeIconStringForEnum:icon] sizeWithFont:font];
@@ -81,7 +81,7 @@ typedef NS_ENUM(int, FAWEIconLayer) {
     return [NSString fontAwesomeEnumForIconIdentifier:self.text];
 }
 
-- (void)setIconSize:(NSInteger)iconSize
+- (void)setIconSize:(CGFloat)iconSize
 {
     _iconSize = iconSize;
     self.font = [UIFont fontWithName:kFontAwesomeFamilyName size:self.iconSize];
@@ -134,7 +134,6 @@ typedef NS_ENUM(int, FAWEIconLayer) {
     // Draw actual image
     [self.textColor setFill];
     [self.text drawAtPoint:CGPointMake((self.bounds.size.width/2)-(fontSize.width/2), 0) withFont:self.font];
-    [self.text drawAtPoint:CGPointMake((self.bounds.size.width/2)-(fontSize.width/2), -1) withFont:self.font];
     
     // Draw layers
     if (gradient != nil) {
@@ -158,8 +157,8 @@ typedef NS_ENUM(int, FAWEIconLayer) {
         [[UIColor whiteColor] setFill];
         
         // Draw icon
-        [self.text drawAtPoint:CGPointMake((self.bounds.size.width/2)-(fontSize.width/2), -0.5) withFont:self.font];
-        [self.text drawAtPoint:CGPointMake((self.bounds.size.width/2)-(fontSize.width/2), -1) withFont:self.font];
+        [self.text drawAtPoint:CGPointMake((self.bounds.size.width/2)-(fontSize.width/2), 0) withFont:self.font];
+        [self.text drawAtPoint:CGPointMake((self.bounds.size.width/2)-(fontSize.width/2), 0) withFont:self.font];
 
         if (preClip != nil) {
             preClip();
@@ -184,7 +183,7 @@ typedef NS_ENUM(int, FAWEIconLayer) {
     
     // Create negative image
     UIGraphicsBeginImageContextWithOptions(rect.size, NO, 0);
-    [[UIColor blackColor] setFill];
+    [self.innerShadowColor setFill];
     
     // Draw icon
     [self.text drawAtPoint:CGPointMake((self.bounds.size.width/2)-(fontSize.width/2), -0.5) withFont:self.font];

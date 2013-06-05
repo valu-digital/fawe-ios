@@ -132,7 +132,7 @@ typedef NS_ENUM(int, FAWEIconLayer) {
     }
 
     // Draw actual image
-    [[UIColor whiteColor] setFill];
+    [self.textColor setFill];
     [self.text drawAtPoint:CGPointMake((self.bounds.size.width/2)-(fontSize.width/2), 0) withFont:self.font];
     [self.text drawAtPoint:CGPointMake((self.bounds.size.width/2)-(fontSize.width/2), -1) withFont:self.font];
     

@@ -141,14 +141,17 @@ static char FAWE_BUTTON_SPECS_KEY;
     CGSize iconSize   = [self.iconView.text sizeWithFont:self.iconView.font];
     NSInteger centerY = self.frame.size.height/2-iconSize.height/2;
     NSInteger centerX = self.frame.size.width/2-iconSize.width/2;
+    
+    NSInteger width = iconSize.width + self.iconEdgeInsets.left + self.iconEdgeInsets.right;
+    NSInteger height = iconSize.height + self.iconEdgeInsets.top + self.iconEdgeInsets.bottom;
 
     if (self.iconAlign == FAWEButtonIconAlignRight) {
-        rect = CGRectMake(self.frame.size.width - iconSize.width, centerY, iconSize.width, iconSize.height);
+        rect = CGRectMake(self.frame.size.width - iconSize.width, centerY, width, height);
     } else if (self.iconAlign == FAWEButtonIconAlignCenter) {
-        rect = CGRectMake(centerX, centerY, iconSize.width, iconSize.height);
+        rect = CGRectMake(centerX, centerY, width, height);
     } else {
         // Left
-        rect = CGRectMake(0, centerY, iconSize.width, iconSize.height);
+        rect = CGRectMake(0, centerY, width, height);
     }
     
     rect = UIEdgeInsetsInsetRect(rect, self.iconEdgeInsets);
